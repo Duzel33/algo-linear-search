@@ -12,6 +12,10 @@ describe("tests linearSearch", () => {
   test("linearSearch(4, [1, 2, 3]) === undefined", () => {
     expect(linearSearch(4, [1, 2, 3])).toBe(undefined);
   });
+
+    test("linearSearch(1775, [1776, 1954, 1243]) === undefined", () => {
+      expect(linearSearch(1775, [1776, 1954, 1243])).toBe(undefined);
+  });
 });
 
 describe("tests globalLinearSearch", () => {
@@ -25,5 +29,9 @@ describe("tests globalLinearSearch", () => {
 
   test("globalLinearSearch('n', 'bananas'.split('')) === [2, 4]", () => {
     expect(globalLinearSearch("n", "bananas".split(""))).toEqual([2, 4]);
+  });
+
+    test("globalLinearSearch('o', 'Code Platoon'.split('')) === [2, 4]", () => {
+      expect(globalLinearSearch("o", "Code Platoon".split(""))).toEqual([1, 9, 10]);
   });
 });
